@@ -1,15 +1,17 @@
 public class App {
+    private String category;
+    private double amount;
 
-    public static void main(String[] args) {
-        double result = checkEligibility(50000, true);
-        System.out.println("Eligibility result: " + result);
+    public App(String category, double amount) {
+        this.category = category;
+        this.amount = amount;
     }
 
-    public static double checkEligibility(double income, boolean eligible) {
-        if (eligible) {
-            return income;
-        } else {
-            return 0;
-        }
+    public String getCategory() {
+        return category;
+    }
+
+    public double getAmount() {
+        return amount;
     }
 }

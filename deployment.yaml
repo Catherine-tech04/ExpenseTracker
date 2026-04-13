@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: java-app
-        image: catherinemaria/fraud-detection:latest
+        image: catherinemaria/pricingnew:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 ---
