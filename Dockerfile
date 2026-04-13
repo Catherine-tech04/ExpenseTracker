@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk 
+FROM eclipse-temurin:17-jdk-slim
 WORKDIR /app 
 COPY target/simple-java-app-1.0.jar app.jar 
 CMD ["java", "-jar", "app.jar"]

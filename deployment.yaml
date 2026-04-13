@@ -15,7 +15,6 @@ spec:
       containers:
       - name: java-app
         image: catherinemaria/expense:latest
-        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 ---
